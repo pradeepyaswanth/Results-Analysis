@@ -4,26 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Faculty Dashboard</title>
+  <link rel="stylesheet" href="Stylesheet/faculty.css">
 </head>
 <body>
-  <center>
-    <h1>
+
+    <h1 class="faculty-heading">
       Faculty Profile
     </h1>
+    <center>
+    <div class="faculty-card">
     <table>
       <tr>
         <td>
-          <img src="Faculty_media/Faculty_profile" height="190" width="190"> 
-        </td>
-        <td>
-          <p>
-            welcome to your FAculty Dashboard <br>Manage users,result and<br> andannouncement here.
-          </p>
-        </td>
+          <img src="Faculty_media/Faculty_profile.jpg" class="faculty-img" alt="Faculty_profile"> 
+        </td>   
       </tr>
       <tr>
         <td>
-          <ul>
+          <ul class="list-style">
             <a href="view_course.html"><li>View course</li></a>
             <a href="view_student.html"><li>Veiw Students</li></a>
             <a href="view_result.html"><li>Update Results</li></a>
@@ -32,18 +30,22 @@
       </tr>
       
     </table>
-    <hr>
+    <table>
+  
     <h2>
-      Admin Details
+      Profile Details
     </h2>
-    <table border="1">
+    </table>
+    <table >
       <tr>
         <td><b>Name</b></td><td><b>Anjali Mehta</b></td>
         <tr><td>Email</td><td><u>anjali.mehta@university.in</u></td></tr>
         <tr><td>Department</td><td>Computer Science</td></tr>
       </tr>
     </table>
-    
+</div>
   </center>
+    
+
 </body>
 </html>

@@ -3,27 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Faculty Dashboard</title>
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="Stylesheet/student.css">
 </head>
 <body>
   <center>
-    <h1>
+    <h1 class="student-heading">
       Student Profile
     </h1>
+    <div class="student-card">
     <table>
       <tr>
         <td>
-          <img src="student_media/student logo.jpg" height="190" width="190"> 
-        </td>
-        <td>
-          <p>
-            welcome to your Student Dashboard <br>Manage users,result and<br> andannouncement here.
-          </p>
+          <img src="student_media/student logo.jpg" height="190" width="190" class="student-img" > 
         </td>
       </tr>
       <tr>
         <td>
-          <ul>
+          <ul class="list-style">
             <a href="view_course.html"><li>View course</li></a>
             <a href="view_student.html"><li>Veiw Students</li></a>
             <a href="view_result.html"><li>Update Results</li></a>
@@ -32,18 +29,25 @@
       </tr>
       
     </table>
-    <hr>
+    
+    <table >
+
+        <td colspan="2">
+          <table>
     <h2>
       Student Details
     </h2>
-    <table border="1">
+          </table>
+        </td>
+      </tr>
       <tr>
-        <td><b>Name</b></td><td><b>Anjali Mehta</b></td>
-        <tr><td>Email</td><td><u>anjali.mehta@university.in</u></td></tr>
-        <tr><td>Department</td><td>Computer Science</td></tr>
+        <td><b>Name</b></td><td><b> Mehta</b></td>
+        <tr><td>Email</td><td><u>Student@university.in</u></td></tr>
+        <tr><td>Branch</td><td>Computer Science</td></tr>
+        <tr><td>Roll no.</td><td>243432636</td></tr>
+        <tr><td>Batch</td><td>2023</td></tr>
       </tr>
     </table>
-    
-  </center>
+    </div>
 </body>
 </html>
