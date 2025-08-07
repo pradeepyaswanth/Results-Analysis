@@ -38,10 +38,7 @@ body{
 
 
 .student-card:hover{
-    background: radial-gradient(#BCA88D,#FFF);
-    overscroll-behavior-x: 0px 12px 32px rgb(0,0,1.5);
-    border: 2px solid #B12C00;
-    transform: scale(1.1);
+ transform: translateY(-5px) scale(1.02);
 }
 .list-style{
     list-style: none;
