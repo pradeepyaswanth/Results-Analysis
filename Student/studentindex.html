@@ -4,24 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Student</title>
+  <link rel="stylesheet" href="Stylesheet/studentindex.css">
 </head>
 <body>
-  <center><h1>Student Dashboard</h1></center>
+  <center><h1 class="studentindex-heading">Student Dashboard</h1></center>
   <center>
-    <table border="1">
-      <tr>
-        <td>
-          <a href="profile.html"><img src="student_media/student logo.jpg"img length="150" width="150"></a>
-          <h>profile</h>
-          <a href="view_course.html"><img src=""img length="150" width="150"></a>
-          <h>report</h>
-          <a href="view_report.html"><img src="student_media/student report"img length="150" width="150"></a> 
-          <h>user_mgmt</h>
-          <a href="view_results.html"><img src="student_media/student result"img length="200" width="200"></a>
-        </td>
-      </tr>
-        
-    </table>
+<div class="container">
+  <div class="innercard">
+          <a href="profile.html"><img src="student_media/student logo.jpg"img length="150" width="150" class="index-img"></a>
+          <h3 class="indexheading">profile</h3>
+  </div>
+  <div class="innercard">
+          <a href="view_course.html"><img src="student_media/student result.jpg"img length="150" width="150" class="index-img"></a>
+          <h3 class="indexheading">report</h3>
+  </div>
+  <div class="innercard">
+          <a href="view_report.html"><img src="student_media/student report.jpg"img length="150" width="150" class="index-img"></a> 
+          <h3 class="indexheading">User managment</h3>
+  </div>
+          <div class="innercard">
+          <a href="view_results.html"><img src="student_media/student.jpg"img length="200" width="130" class="index-img"></a>
+          <h3 class="indexheading">Result</h3>
+          </div>
+</div>
   </center>
 </body>
 </html>
