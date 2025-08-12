@@ -2,10 +2,71 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Report</title>
+  <title>User Registration</title>
+  <link rel="stylesheet" href="Stylesheet/user_managment.css">
 </head>
 <body>
-  
+
+
+  <div class="container">
+    <h1>User Registration</h1>
+    <form>
+  <div class="form-group">
+    <label for="name">Full Name</label>
+<input type="text" id="fullname" name="fullname" placeholder="Enter full name" required>
+
+  </div>
+  <div class="form-group">
+    <label for="email">Email</label>
+
+    <input type="email" id="email" name="email" placeholder="Enter email" required>
+
+  </div>
+  <div class="form-group">
+    <label for="role">Role</label>
+    <select id="role" name="role">
+      <option>-- Select Role --</option>
+      <option value="student">Student</option>
+      <option value="Faculty">Faculty</option>
+    </select> 
+  </div>
+  <div class="form-group full-width">
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" placeholder="Enter password" required>
+  </div>
+  <div class="form-group full-width">
+    <button type="submit" class="register-btn">Register User</button>
+  </div>
+</form>
+
+  </div>
+
+  <div class="container">
+    <h1>User Information</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Role</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Pradeep</td>
+          <td>Pradeep@gmail.com</td>
+          <td>student</td>
+          <td>
+            <button class="edit-btn">Edit</button>
+            <button class="delete-btn">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+
 </body>
 </html>

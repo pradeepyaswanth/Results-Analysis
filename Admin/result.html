@@ -1,67 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Admin Result Dashboard</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Mapping</title>
+    <link rel="stylesheet" href="Stylesheet/c_m_f.css">
 </head>
 <body>
- 
-    <h1>
-      Admin Result
-    </h1>
-    <form>
-      <table>
-        <tr>
-          <td>
-      <ul>
-        <li><a href="Result/Add_results.html" >Add results</a></li>
-        <li><a href="Result/Delete_result.html" >Delete</a></li>
-        <li><a href="Result/Update_result.html" >Update</a></li>
-        <li><a href="Result/Post_results.html">Post results</a></li>
-      </ul>
-          </td>
-        </tr>
-      </table>
-<hr>
 
-    <form>
-      <table>
-        <tr>
-          <td><h3>Select Course</h3></td><td><td><select name="Course">
-            <option value="dbms">Dbms</option>
-            <option value="oops">Oops</option>
-            <option value="os">Os</option>
-        </tr>
-    
-      </table>
-    </form>
+    <h1>Faculty Mapping</h1>
 
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label for="faculty">Faculty*</label>
+                <select id="faculty" name="faculty" required>
+                    <option value="">Select Faculty</option>
+                    <option value="john">John Doe</option>
+                    <option value="jane">Jane Smith</option>
+                </select>
+            </div>
 
-</section>
-          <table border="1">
-            <tr>
-              <td>s.no</td><td>reg.no</td><td>Name</td><td>Course</td><td>Marks</td><td>Status</td>
-            </tr>
-            <tr>
-              <td>1</td><td>2341</td><td>asd</td><td>Data structure</td><td><input type="text"></td><td><ul><li>Edit</li><li>Delete</li></ul></td>
-            </tr>
-            <tr>
-              <td>1</td><td>2341</td><td>asd</td><td>Data structure</td><td><input type="text"></td><td><ul><li>Edit</li><li>Delete</li></ul></td>
-            </tr>
-            <tr>
-              <td>1</td><td>2341</td><td>asd</td><td>Data structure</td><td><input type="text"></td><td><ul><li>Edit</li><li>Delete</li></ul></td>
-            </tr>
-            <tr>
-              <td>1</td><td>2341</td><td>asd</td><td>Data structure</td><td><input type="text"></td><td><ul><li>Edit</li><li>Delete</li></ul></td>
-            </tr> 
-    </table>
-    
-</select>
+            <div class="form-group">
+                <label for="course">Course*</label>
+                <select id="course" name="course" required>
+                    <option value="">Select Course</option>
+                    <option value="cse101">CSE101</option>
+                    <option value="aiml202">AIML202</option>
+                </select>
+            </div>
 
- 
-    </form>
-    <button>save </button>
+            <div class="form-group">
+                <label for="ay">Academic Year*</label>
+                <input type="text" id="ay" name="ay" placeholder="2025-2026" required>
+            </div>
+
+            <div class="form-group">
+                <label for="semester">Semester*</label>
+                <select id="semester" name="semester" required>
+                    <option value="">Select Semester</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="section">Section</label>
+                <input type="text" id="status" value="Section" readonly>
+            </div>
+
+            <div class="form-group full-width">
+                <button type="submit" class="register-btn">Add Mapping</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Mapping ID</th>
+                    <th>Faculty</th>
+                    <th>Course</th>
+                    <th>AY</th>
+                    <th>Semester</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>John Doe</td>
+                    <td>CSE101</td>
+                    <td>2025-2026</td>
+                    <td>1</td>
+                    <td>Active</td>
+                    <td>
+                        <button class="edit-btn">Edit</button>
+                        <button class="delete-btn">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Jane Smith</td>
+                    <td>AIML202</td>
+                    <td>2025-2026</td>
+                    <td>2</td>
+                    <td>Active</td>
+                    <td>
+                        <button class="edit-btn">Edit</button>
+                        <button class="delete-btn">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
 </body>
 </html>

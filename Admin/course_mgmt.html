@@ -1,15 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>course mangment</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Management</title>
+    <link rel="stylesheet" href="Stylesheet/course_magment.css">
 </head>
 <body>
- <center>
-    <h1>
-      Course Managment
-    </h1>
-  </center>
+
+<div class="container">
+    <!-- Course Registration Form -->
+    <div class="card">
+        <h2>Course Registration</h2>
+        <form>
+            <div class="form-group">
+                <label>Code <span>*</span></label>
+                <input type="text" placeholder="Enter course code" required>
+            </div>
+            <div class="form-group">
+                <label>Title <span>*</span></label>
+                <input type="text" placeholder="Enter course title" required>
+            </div>
+            <div class="form-group">
+                <label>Description</label>
+                <textarea placeholder="Enter course description"></textarea>
+            </div>
+            <div class="form-group">
+                <label>Credits <span>*</span></label>
+                <input type="number" placeholder="Enter credits" required>
+            </div>
+            <div class="form-group">
+                <label>Department <span>*</span></label>
+                <input type="text" placeholder="Enter department" required>
+            </div>
+            <div class="form-group">
+                <label>Semester <span>*</span></label>
+                <input type="text" placeholder="Enter semester" required>
+            </div>
+            <div class="form-group">
+                <label>Year <span>*</span></label>
+                <input type="number" placeholder="Enter year" required>
+            </div>
+            <button type="submit" class="btn-submit">Register Course</button>
+        </form>
+    </div>
+
+    <!-- Course Information Table -->
+    <div class="card">
+        <h2>Course Information</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>CourseID</th>
+                    <th>Code</th>
+                    <th>Title</th>
+                    <th>Credits</th>
+                    <th>Department</th>
+                    <th>Semester</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>CS101</td>
+                    <td>Intro to Computer Science</td>
+                    <td>3</td>
+                    <td>Computer Science</td>
+                    <td>1</td>
+                    <td>
+                        <button class="btn-edit">Edit</button>
+                        <button class="btn-delete">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
 </body>
 </html>

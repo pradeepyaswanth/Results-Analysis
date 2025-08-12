@@ -2,14 +2,49 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Report</title>
+  <link rel="stylesheet" href="Stylesheet/report.css">
 </head>
 <body>
-  <center>
-    <h1>
-      Report View
-    </h1>
-  </center>
+
+<h1>Report</h1>
+  <div class="container">
+    <form>
+  <div class="form-group">
+    <label for="name">Full Name</label>
+<input type="text" id="fullname" name="fullname" placeholder="Enter full name" required>
+
+  </div>
+  <div class="form-group">
+    <label for="acedmic year">Academic year</label>
+    <select id="role" name="role">
+      <option>-- Select Role --</option>
+      <option value="student">2025-2026</option>
+      <option value="student">2024-2025</option>
+      <option value="student">2023-2024</option>
+      <option value="student">2022-2023</option>
+    </select> 
+  </div>
+  <div class="form-group">
+    <label for="role">Role</label>
+    <select id="role" name="role">
+      <option>-- Select SEM --</option>
+      <option value="ODD">ODD</option>
+      <option value="EVEN">EVEN</option>
+    </select> 
+  </div>
+  <div class="form-group full-width">
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" placeholder="Enter password" required>
+  </div>
+  <div class="form-group full-width">
+    <button type="submit" class="register-btn">Submit</button>
+  </div>
+</form>
+
+  </div>
+
+  
+
 </body>
 </html>

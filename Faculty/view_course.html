@@ -1,15 +1,102 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Mapping</title>
+    <link rel="stylesheet" href="Stylesheet/course.css">
 </head>
 <body>
-  <center>
-    <h1>
-      Course 
-    </h1>
-  </center>
+
+    <h1>Course Mapping to Student</h1>
+    <form class="mapping-form">
+        <div class="form-group">
+            <label for="faculty">Faculty <span>*</span></label>
+            <input type="text" id="faculty" name="faculty" placeholder="Enter Faculty Name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="course">Course <span>*</span></label>
+            <input type="text" id="course" name="course" placeholder="Enter Course" required>
+        </div>
+
+        <div class="form-group">
+            <label for="ay">Academic Year <span>*</span></label>
+            <input type="text" id="ay" name="ay" placeholder="e.g., 2024-2025" required>
+        </div>
+
+        <div class="form-group">
+            <label for="semester">Semester <span>*</span></label>
+            <select id="semester" name="semester" required>
+                <option value="">Select Semester</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="status">Section</label>
+            <select id="status" name="Section">
+                <option value="Section" selected>Section</option>
+                <option value="101">101</option>
+                <option value="102">102</option>
+                <option value="103">103</option>
+                <option value="104">104</option>
+                <option value="105">105</option>
+                <option value="106">106</option>
+                <option value="107">107</option>
+                <option value="108">108</option>
+                <option value="109">109</option>
+                <option value="110">110</option>
+
+
+            </select>
+        </div>
+
+        <button type="submit">Add Mapping</button>
+    </form>
+    <table class="mapping-table">
+        <thead>
+            <tr>
+                <th>MappingID</th>
+                <th>Faculty</th>
+                <th>Course</th>
+                <th>Academic Year</th>
+                <th>Semester</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>101</td>
+                <td>John Doe</td>
+                <td>DBMS</td>
+                <td>2024-2025</td>
+                <td>1</td>
+                <td>Active</td>
+                <td>
+                    <button class="edit-btn">Edit</button>
+                    <button class="delete-btn">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Jane Smith</td>
+                <td>OOPS</td>
+                <td>2024-2025</td>
+                <td>2</td>
+                <td>Inactive</td>
+                <td>
+                    <button class="edit-btn">Edit</button>
+                    <button class="delete-btn">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
 </body>
 </html>
